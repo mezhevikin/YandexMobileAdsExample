@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "YandexMobileMetrica",
+        "repositoryURL": "https://github.com/yandexmobile/metrica-sdk-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "3994299f8b07efd44a973aff407527ccfa0fa35d",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "YandexMobileAds",
+        "repositoryURL": "https://github.com/azarovalex/YandexMobileAds-SwiftPM",
+        "state": {
+          "branch": "master",
+          "revision": "5248cf0c6b6b1b688bc723480012c044bc6921e4",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

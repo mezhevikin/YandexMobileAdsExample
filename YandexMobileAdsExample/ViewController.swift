@@ -6,14 +6,32 @@
 //
 
 import UIKit
+import YandexMobileAds
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, YMAAdViewDelegate {
 
+    var adView: YMAAdView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        addAdView()
     }
-
+    
+    func addAdView() {
+        let size = YMAAdSize.flexibleSize(with: CGSize(
+            width: view.frame.width,
+            height: 50
+        ))
+        adView = YMAAdView(
+            adUnitID: "YMAAdSizeBanner_320x50",
+            adSize: size
+        )
+        adView?.delegate = self
+    }
+    
+    func adViewDidLoad(_ adView: YMAAdView) {
+        print("load")
+    }
 
 }
 

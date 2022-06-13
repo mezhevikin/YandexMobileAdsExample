@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import YandexMobileAds
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
